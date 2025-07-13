@@ -4,7 +4,8 @@
     "description": "Minimal Express.js app for CI/CD demo",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js"
+      "start": "node index.js",
+      "test": "echo \"No tests written yet\" && exit 0"
     },
     "keywords": ["express", "ci-cd", "nodejs"],
     "author": "Your Name",
