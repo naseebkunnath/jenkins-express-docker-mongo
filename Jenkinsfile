@@ -1,22 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Install Dependencies') {
       steps {
         bat 'npm install'
       }
     }
+
     stage('Test') {
       steps {
         bat 'npm test'
       }
     }
-    stage('Dockerize') {
-      steps {
-        bat 'docker build -t express-app .'
-      }
-    }
-    stage('Deploy') {
+
+    stage('Compose Deploy') {
       steps {
         bat 'docker-compose down'
         bat 'docker-compose up --build -d'
