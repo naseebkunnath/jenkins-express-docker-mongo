@@ -3,22 +3,22 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+        bat 'npm install'
       }
     }
     stage('Test') {
       steps {
-        sh 'npm test'
+        bat 'npm test'
       }
     }
     stage('Dockerize') {
       steps {
-        sh 'docker build -t express-app .'
+        bat 'docker build -t express-app .'
       }
     }
     stage('Deploy') {
       steps {
-        sh 'docker-compose up -d'
+        bat 'docker-compose up -d'
       }
     }
   }
