@@ -4,14 +4,18 @@
     "description": "Minimal Express.js app for CI/CD demo",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js",
-      "test": "echo \"No tests written yet\" && exit 0"
+        "start": "node index.js",
+        "test": "echo \"No tests written yet\" && exit 0"
     },
-    "keywords": ["express", "ci-cd", "nodejs"],
+    "keywords": [
+        "express",
+        "ci-cd",
+        "nodejs"
+    ],
     "author": "Your Name",
     "license": "MIT",
     "dependencies": {
-      "express": "^4.18.2"
+        "express": "^4.18.2",
+        "mongoose": "^8.16.3"
     }
 }
-  
